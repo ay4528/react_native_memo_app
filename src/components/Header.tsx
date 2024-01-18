@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet } from "react-native"
 
 const Header = (): JSX.Element => {
 	return (
@@ -13,25 +13,25 @@ const Header = (): JSX.Element => {
 
 const styles = StyleSheet.create({
 	header: {
-		backgroundColor: '#467FD3',
+		backgroundColor: "#467FD3",
 		height: 104,
-		justifyContent: 'flex-end',
+		justifyContent: "flex-end",
 	},
 	headerInner: {
-		alignItems: 'center'
+		alignItems: "center"
 	},
 	headerTitle: {
 		marginBottom: 8,
 		fontSize: 22,
 		lineHeight: 32,
-		fontWeight: 'bold',
-		color: '#fff'
+		fontWeight: "bold",
+		color: "#fff"
 	},
 	headerRight: {
-		position: 'absolute',
+		position: "absolute",
 		right: 16,
 		bottom: 16,
-		color: 'rgba(255, 255, 255, 0.7)'
+		color: "rgba(255, 255, 255, 0.7)"
 	}
 })
 
