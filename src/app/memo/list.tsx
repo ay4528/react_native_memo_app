@@ -44,9 +44,9 @@ const List = (): JSX.Element => {
 	return (
 		<View style={styles.container}>
 			<View>
-				<MemoListItem />
-				<MemoListItem />
-				<MemoListItem />
+				{memos.map((memo) => {
+					return <MemoListItem memo={memo} key={memo.bodyText} />
+				})}
 			</View>
 
 			<CircleButton onPress={handlePress}>
