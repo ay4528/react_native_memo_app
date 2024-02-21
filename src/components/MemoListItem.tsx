@@ -17,7 +17,7 @@ const MemoListItem = (props: Props): JSX.Element | null => {
 		<Link href={{ pathname: "/memo/detail/", params: { id: memo.id } }} asChild>
 			<TouchableOpacity style={styles.memoListItem}>
 				<View>
-					<Text style={styles.memoListItemTitle}>{bodyText}</Text>
+					<Text style={styles.memoListItemTitle} numberOfLines={1}>{bodyText}</Text>
 					<Text style={styles.memoListItemDate}>{dateString}</Text>
 				</View>
 				<TouchableOpacity>
